@@ -23,8 +23,12 @@ a:hover {
   color:#ff4351;
   text-decoration: underline;
 }
+.social-profile {
+  margin: 30px 0;
+  line-height: 10px;
+}
 .email-wrapper {
-  margin-top: 76px;
+  margin-top: 30px;
 }
 .btn {
   background: #1b9af7;
