@@ -1,0 +1,24 @@
+{
+  "name": "yamilasusta.com",
+  "version": "0.0.0",
+  "description": "Simple homepage",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elbuo8/yamilasusta.com.git"
+  },
+  "author": "Yamil Asusta (elbuo8)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elbuo8/yamilasusta.com/issues"
+  },
+  "homepage": "https://github.com/elbuo8/yamilasusta.com"
+}

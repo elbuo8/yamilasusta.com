@@ -1,9 +1,10 @@
-var http = require('http');
-var fs = require('fs');
-var index = fs.readFileSync(__dirname + '/index.html').toString();
+var express = require('express');
+var app = express();
 
-http.createServer(function (req, res) {
-  res.write(index);
-}).listen(process.env.PORT || '3000');
+app.get('/*', function (req, res) {
+  res.sendfile(__dirname + '/public/index.html');
+});
+
+app.listen(process.env.PORT || 3000);
 
 console.log('Server running on', process.env.PORT || 3000);
