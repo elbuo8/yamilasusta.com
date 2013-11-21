@@ -9,10 +9,10 @@
   </head>
   <body>
     <center>
-      <h3 class='hello-world'>Hey there, I'm <em>Yamil Asusta</em></h3>
+      <h3 class='hello-world'>Hey there, I'm <em id="me">Yamil Asusta</em></h3>
       <p class='about-me'>I'm a Hacker, Engineer &amp; Developer.<br> 
-      Developer Evangelist <a href="http://sendgrid.com">@SendGrid</a> &amp; alumNY <a href="http://hackny.org">@hackNY</a>.<br>
-      Originally from <a href="http://www.seepuertorico.com/">Puerto Rico</a>, living in New York City.</p>
+      Developer Evangelist <a id="sg" href="http://sendgrid.com">@SendGrid</a> &amp; alumNY <a id="hackny" href="http://hackny.org">@hackNY</a>.<br>
+      Originally from <a id="pr" href="http://www.seepuertorico.com/">Puerto Rico</a>, living in New York City.</p>
       <div class='social-profiles'>
         <a href="http://linkedin.com/in/elbuo"><img src="images/linkedin.png" alt="LinkedIn" height="30" width="30"></a>
         <a href="http://github.com/elbuo8"><img src="images/github.png" alt="GitHub" height="30" width="30"></a>
@@ -20,6 +20,9 @@
       </div>
       <div class='email-wrapper'>
         <a href="mailto:hello@yamilasusta.com" class='btn'>Holla @ me, brah</a>
+      </div>
+      <div>
+        <img id="snap">
       </div>
     </center>
     <script>
@@ -30,7 +33,50 @@
 
       ga('create', 'UA-45919807-1', 'yamilasusta.com');
       ga('send', 'pageview');
-
+    </script>
+    <script>
+      var imgDir = 'images/';
+      var snap = document.getElementById('snap');
+      /*
+      var ids = ['me', 'sg', 'hackny', 'pr'];
+      for (var i = 0; i < ids.length; i++) {
+        var element = document.getElementById(ids[i]);
+        element.onmouseover = function () {
+          snap.setAttribute('src', imgDir + ids[i] + 'png');
+        };
+        element.onmouseout = function () {
+          snap.removeAttribute('src');
+        };
+      }
+      */
+      var intro = document.getElementById('me');
+      intro.onmouseover = function () {
+        snap.setAttribute('src', imgDir + 'me.png');
+      };
+      intro.onmouseout = function () {
+        snap.removeAttribute('src');
+      };
+      var sg = document.getElementById('sg');
+      sg.onmouseover = function () {
+        snap.setAttribute('src', imgDir + 'sg.png');
+      };
+      sg.onmouseout = function () {
+        snap.removeAttribute('src');
+      };
+      var hackny = document.getElementById('hackny');
+      hackny.onmouseover = function () {
+        snap.setAttribute('src', imgDir + 'hackny.png');
+      };
+      hackny.onmouseout = function () {
+        snap.removeAttribute('src');
+      };
+      var pr = document.getElementById('pr');
+      pr.onmouseover = function () {
+        snap.setAttribute('src', imgDir + 'pr.svg');
+      };
+      pr.onmouseout = function () {
+        snap.removeAttribute('src');
+      };
     </script>
   </body>
 </html>
