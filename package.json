@@ -4,7 +4,7 @@
   "description": "Simple homepage",
   "main": "server.js",
   "dependencies": {
-    "express": "~3.4.4"
+    "express": "^4.14.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,10 +14,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/elbuo8/yamilasusta.com.git"
-  },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
   },
   "author": "Yamil Asusta (elbuo8)",
   "license": "MIT",

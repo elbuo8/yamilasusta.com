@@ -2,17 +2,18 @@
   <head>
     <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
     <meta name="description" content="Yamil Asusta's home in the web">
-    <meta name="keywords" content="yamil, asusta, developer, engineer, hacker, evangelist, puerto, rico, hackny, new, york, nyc">
+    <meta name="keywords" content="yamil, asusta, developer, engineer, hacker, devops, evangelist, puerto, rico, hackny, new, york, nyc">
     <title>Yamil Asusta</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <center>
-      <h3 class='hello-world'>Hey there, I'm <em id="me">Yamil Asusta</em></h3>
-      <p class='about-me'>I'm a Hacker, Engineer &amp; Developer.<br> 
-      Developer Evangelist <a id="sg" href="http://sendgrid.com">@SendGrid</a> &amp; alumNY <a id="hackny" href="http://hackny.org">@hackNY</a>.<br>
-      Originally from <a id="pr" href="http://www.seepuertorico.com/">Puerto Rico</a>, living in New York City.</p>
+      <h3 class='hello-world'>Hey there, I'm <em id="me">Yamil Asusta.</em></h3>
+      <p class='about-me'>I build stuff, make it fast &amp; keep it running reliably. Sometimes I talk about stuff over beers too.<br>
+      Currently hanging out with the <a href="https://auth0.com/">@Auth0</a> folks as a Production Engineer.<br>
+      Previously with <a href="https://rebelmail.com">@Rebelmail</a>, <a href="https://sendgrid.com">@SendGrid</a> &amp; <a href="http://hackny.org">@hackNY</a>.<br>
+      Born and raised in <a href="http://www.seepuertorico.com/">Puerto Rico</a>.</p>
       <div class='social-profiles'>
         <a href="http://linkedin.com/in/elbuo"><img src="images/linkedin.png" alt="LinkedIn" height="30" width="30"></a>
         <a href="http://github.com/elbuo8"><img src="images/github.png" alt="GitHub" height="30" width="30"></a>
@@ -21,62 +22,12 @@
       <div class='email-wrapper'>
         <a href="mailto:hello@yamilasusta.com" class='btn'>Holla @ me, brah</a>
       </div>
-      <div>
-        <img id="snap">
-      </div>
     </center>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-45919807-1', 'yamilasusta.com');
-      ga('send', 'pageview');
-    </script>
-    <script>
-      var imgDir = 'images/';
-      var snap = document.getElementById('snap');
-      /*
-      var ids = ['me', 'sg', 'hackny', 'pr'];
-      for (var i = 0; i < ids.length; i++) {
-        var element = document.getElementById(ids[i]);
-        element.onmouseover = function () {
-          snap.setAttribute('src', imgDir + ids[i] + 'png');
-        };
-        element.onmouseout = function () {
-          snap.removeAttribute('src');
-        };
-      }
-      */
-      var intro = document.getElementById('me');
-      intro.onmouseover = function () {
-        snap.setAttribute('src', imgDir + 'me.png');
-      };
-      intro.onmouseout = function () {
-        snap.removeAttribute('src');
-      };
-      var sg = document.getElementById('sg');
-      sg.onmouseover = function () {
-        snap.setAttribute('src', imgDir + 'sg.png');
-      };
-      sg.onmouseout = function () {
-        snap.removeAttribute('src');
-      };
-      var hackny = document.getElementById('hackny');
-      hackny.onmouseover = function () {
-        snap.setAttribute('src', imgDir + 'hackny.png');
-      };
-      hackny.onmouseout = function () {
-        snap.removeAttribute('src');
-      };
-      var pr = document.getElementById('pr');
-      pr.onmouseover = function () {
-        snap.setAttribute('src', imgDir + 'pr.svg');
-      };
-      pr.onmouseout = function () {
-        snap.removeAttribute('src');
-      };
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+        analytics.load("QLQcktSIeh9AuS3QSkzCVMGMhBSt0yYt");
+        analytics.page();
+      }}();
     </script>
   </body>
 </html>
