@@ -1,3 +1,15 @@
+machine:
+  node:
+    version: 6.1.0
+
 test:
   override:
     - echo 'skipping tests'
+
+deployment:
+  master:
+    branch: master
+    owner: elbuo8
+    commands:
+      - npm i -g now
+      - now deploy -t $ZEIT_TOKEN --docker

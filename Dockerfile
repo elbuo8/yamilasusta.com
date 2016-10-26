@@ -1,4 +1,6 @@
 FROM node:6.9
+MAINTAINER Yamil Asusta <hello@yamilasusta.com>
+LABEL name="yamilasusta.com"
 
 WORKDIR /app
 
