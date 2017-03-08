@@ -1,10 +1,16 @@
 machine:
   node:
     version: 6.1.0
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build --rm=false -t elbuo/yamilasusta.com:latest .
 
 test:
   override:
-    - echo 'skipping tests'
+    - docker run elbuo/yamilasusta.com:latest npm i mocha && mocha
 
 deployment:
   master:
